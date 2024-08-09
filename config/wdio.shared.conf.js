@@ -1,13 +1,6 @@
-import path from 'path';
-
 export const config = {
     //
     // ====================
-    // Runner Configuration
-    // ====================
-    // WebdriverIO supports running e2e tests as well as unit and component tests.
-    runner: 'local',
-    port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -23,10 +16,6 @@ export const config = {
     // The path of the spec files will be resolved relative from the directory of
     // of the config file unless it's absolute.
     //
-    specs: [
-        // ToDo: define location for spec files here
-        './test/specs/android/delete-note-screen*.js'
-    ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -53,15 +42,6 @@ export const config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        'appium:platformName': 'Android',
-        'appium:platformVersion': '11.0',
-        'appium:deviceName': 'Pixel 5',
-        'appium:automationName': 'UIAutomator2',
-        'appium:app': path.join(process.cwd(), 'app/android/ColorNote+Notepad.apk'),
-        'appium:autoGrantPermissions': true
-    }],
-
     //
     // ===================
     // Test Configurations
@@ -104,12 +84,7 @@ export const config = {
     //
     // Default request retries count
     connectionRetryCount: 3,
-    //
-    // Test runner services
-    // Services take over a specific job you don't want to take care of. They enhance
-    // your test setup with almost no effort. Unlike plugins, they don't add new
-    // commands. Instead, they hook themselves up into the test process.
-    services: ['appium'],
+
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
