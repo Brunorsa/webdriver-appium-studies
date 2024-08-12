@@ -31,7 +31,4 @@ describe('Add Notes', () => {
     await expect($('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/view_note"]'))
       .toHaveText("Naruto\nOnePiece\nAOT")
   });
-  it('Delete a note & check the note in trash can', async () => {
-
-  });
 })

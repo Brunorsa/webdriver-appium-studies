@@ -11,7 +11,7 @@ config.port = 4723;
 // Specify Test Files
 // ==================
 config.specs = [
-  '../test/specs/android/add-note-screen*.js'
+  '../test/specs/android/delete-note-screen*.js'
 ];
 // ===========
 // Capabilities

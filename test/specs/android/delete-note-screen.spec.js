@@ -1,6 +1,6 @@
 import EditNoteScreen from "../../screenobjects/android/edit-note.screen.js";
 
-describe('Add Notes', () => {
+describe('Delete Notes', () => {
   it('Delete a note & check the note in trash can', async () => {
     await EditNoteScreen.skipTutorial();
     await EditNoteScreen.addAndSaveNote('TV Shows', 'Friends\nBreakingBad\nPeakBlinders');

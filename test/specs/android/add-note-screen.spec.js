@@ -24,7 +24,4 @@ describe('Add Notes', () => {
     await expect(AddNoteScreen.editBtn).toBeDisplayed();
     await expect(AddNoteScreen.viewNote).toHaveText("Naruto\nOnePiece\nAOT")
   });
-  it('Delete a note & check the note in trash can', async () => {
-
-  });
 })
